@@ -6,7 +6,7 @@ GROUP=usbusers
 
 # TODO create deb packages for these dependencies
 echo "Installing python dependencies via pip"
-pip install jcconv pif Flask-cors Pillow
+pip install jcconv pif Flask-Babel Flask-cors Pillow
 pip install --pre pyusb
 
 echo "Configure pywebdriver user and group"
@@ -17,6 +17,7 @@ else
     adduser --no-create-home --system $USERNAME
 fi
 adduser $USERNAME $GROUP
+adduser $USERNAME dialout
 
 echo "Restarting udev"
 restart udev
