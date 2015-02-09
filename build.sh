@@ -4,7 +4,7 @@ DIST_TYPE=tar.gz
 DIST_DIR=dist
 BUILD_DIR=build
 
-read -p "Full name: " fullname
+read -p "Full Dev name: " fullname
 read -p "Email: " email
 default_version=$(cat VERSION)-1
 read -p "Version: (default $default_version): " version
