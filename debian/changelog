@@ -1,6 +1,6 @@
-pywebdriver (0.1.2-1) UNRELEASED; urgency=medium
+pywebdriver (0.1.2-7) UNRELEASED; urgency=medium
 
   [ Sylvain Calador ]
-  * New upstream version.
+  * Serve pywebdriver with Nginx 
 
- -- Sylvain Calador <sylvain.calador@akretion.com>  Tue, 09 Dec 2014 15:30:27 +0100
+ -- Sylvain Calador <sylvain.calador@akretion.com>  Tue, 10 Feb 2015 11:56:06 +0100
