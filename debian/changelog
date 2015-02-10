@@ -1,6 +1,13 @@
-pywebdriver (0.1.2-7) UNRELEASED; urgency=medium
+pywebdriver (0.1.2-8) UNRELEASED; urgency=medium
 
   [ Sylvain Calador ]
   * Serve pywebdriver with Nginx 
 
  -- Sylvain Calador <sylvain.calador@akretion.com>  Tue, 10 Feb 2015 11:56:06 +0100
+
+  [ Sébastien ]
+  * fix installation on raspbian 
+  * Fix installation on raspbian, update pip and restart udev using service 
+  * Fix missing cups package (later we will make them optionnal) 
+
+ -- Sébastien <sebastien.beau@akretion.com>  Mon, 09 Feb 2015 18:31:44 +0100

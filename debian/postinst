@@ -5,6 +5,8 @@ USERNAME=pywebdriver
 GROUP=usbusers
 
 # TODO create deb packages for these dependencies
+echo "Update pip installation to the last version"
+pip install pip --upgrade
 echo "Installing python dependencies via pip"
 pip install jcconv pif Flask-Babel Flask-cors Pillow
 pip install --pre pyusb
@@ -20,7 +22,7 @@ adduser $USERNAME $GROUP
 adduser $USERNAME dialout
 
 echo "Restarting udev"
-restart udev
+service udev restart
 
 echo "Starting pywebdriver supervisor service"
 supervisorctl reread
